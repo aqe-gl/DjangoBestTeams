@@ -1,70 +1,67 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The top 10 clubs of 2025</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-<body>
-<h1>The best teams in the world</h1>
-<br>
-<div class="card">
-    <div class="my-images">
-        <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/7/7a/Manchester_United_FC_crest.svg/2021px-Manchester_United_FC_crest.svg.png"
-             alt="Manchester united">
-    </div>
-    <p><b>Manchester United</b></p>
-    <p>Stadium: <b><i>Old Trafford</i></b></p>
-    <p>Rating: <b>99</b>(🌕🌕🌕🌕🌕)</p>
-    <p>Trophies: <b><i>68</i></b></p>
-    <p>League: <b><i>Premier League</i></b></p>
-</div>
-<div class="card">
-    <div class="my-images">
-        <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/5/56/Real_Madrid_CF.svg/1464px-Real_Madrid_CF.svg.png"
-             alt="Real Madrid">
-    </div>
-    <p><b>Real Madrid</b></p>
-    <p>Stadium: <b><i>Santiago Bernabeu</i></b></p>
-    <p>Rating: <b>99.5(🌕🌕🌕🌕🌕)</b></p>
-    <p>Trophies: <b><i>102</i></b></p>
-    <p>League: <b><i>La Liga</i></b></p>
-</div>
-<div class="card">
-    <div class="my-images">
-        <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1010px-FC_Barcelona_%28crest%29.svg.png"
-             alt="Barcelona">
-    </div>
-    <p><b>Barcelona</b></p>
-    <p>Stadium: <b><i>Camp Nou</i></b></p>
-    <p>Rating: <b>99.5(🌕🌕🌕🌕🌕)</b></p>
-    <p>Trophies: <b><i>108</i></b></p>
-    <p>League: <b><i>La Liga</i></b></p>
-</div>
-<div class="card">
-    <div class="my-images">
-        <img src="https://thumbs.dreamstime.com/b/liverpool-f-c-england-feb-vector-illustration-logo-white-background-87585073.jpg"
-             alt="Liverpool">
-    </div>
-    <p><b>Liverpool</b></p>
-    <p>Stadium: <b><i>Anfield</i></b></p>
-    <p>Rating: <b>97(🌕🌕🌕🌕🌗)</b></p>
-    <p>Trophies: <b><i>71</i></b></p>
-    <p>League: <b><i>Premier League</i></b></p>
-</div>
-<div class="card">
-    <div class="my-images">
-        <img src="https://img.freepik.com/premium-vector/manchester-city-logo-vector_618941-176.jpg?w=2000"
-             alt="Manchester City">
-    </div>
-    <p><b>Manchester City</b></p>
-    <p>Stadium: <b><i>Etihad Stadium</i></b></p>
-    <p>Rating: <b>96(🌕🌕🌕🌕🌗)</b></p>
-    <p>Trophies: <b><i>99</i></b></p>
-    <p>League: <b><i>Premier League</i></b></p>
-</div>
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'core/css/main.css' %}">
+{% endblock %}
 
-</body>
+{% block content %}
+    <h1>The best teams in the world</h1>
+    <br>
+    <div class="card">
+        <div class="my-images">
+            <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/7/7a/Manchester_United_FC_crest.svg/2021px-Manchester_United_FC_crest.svg.png"
+                 alt="Manchester united">
+        </div>
+        <p><b>Manchester United</b></p>
+        <p>Stadium: <b><i>Old Trafford</i></b></p>
+        <p>Rating: <b>99</b>(🌕🌕🌕🌕🌕)</p>
+        <p>Trophies: <b><i>68</i></b></p>
+        <p>League: <b><i>Premier League</i></b></p>
+    </div>
+    <div class="card">
+        <div class="my-images">
+            <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/5/56/Real_Madrid_CF.svg/1464px-Real_Madrid_CF.svg.png"
+                 alt="Real Madrid">
+        </div>
+        <p><b>Real Madrid</b></p>
+        <p>Stadium: <b><i>Santiago Bernabeu</i></b></p>
+        <p>Rating: <b>99.5(🌕🌕🌕🌕🌕)</b></p>
+        <p>Trophies: <b><i>102</i></b></p>
+        <p>League: <b><i>La Liga</i></b></p>
+    </div>
+    <div class="card">
+        <div class="my-images">
+            <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1010px-FC_Barcelona_%28crest%29.svg.png"
+                 alt="Barcelona">
+        </div>
+        <p><b>Barcelona</b></p>
+        <p>Stadium: <b><i>Camp Nou</i></b></p>
+        <p>Rating: <b>99.5(🌕🌕🌕🌕🌕)</b></p>
+        <p>Trophies: <b><i>108</i></b></p>
+        <p>League: <b><i>La Liga</i></b></p>
+    </div>
+    <div class="card">
+        <div class="my-images">
+            <img src="https://thumbs.dreamstime.com/b/liverpool-f-c-england-feb-vector-illustration-logo-white-background-87585073.jpg"
+                 alt="Liverpool">
+        </div>
+        <p><b>Liverpool</b></p>
+        <p>Stadium: <b><i>Anfield</i></b></p>
+        <p>Rating: <b>97(🌕🌕🌕🌕🌗)</b></p>
+        <p>Trophies: <b><i>71</i></b></p>
+        <p>League: <b><i>Premier League</i></b></p>
+    </div>
+    <div class="card">
+        <div class="my-images">
+            <img src="https://img.freepik.com/premium-vector/manchester-city-logo-vector_618941-176.jpg?w=2000"
+                 alt="Manchester City">
+        </div>
+        <p><b>Manchester City</b></p>
+        <p>Stadium: <b><i>Etihad Stadium</i></b></p>
+        <p>Rating: <b>96(🌕🌕🌕🌕🌗)</b></p>
+        <p>Trophies: <b><i>99</i></b></p>
+        <p>League: <b><i>Premier League</i></b></p>
+    </div>
+
+{% endblock %}

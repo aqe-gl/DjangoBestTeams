@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Teams</title>
+    <link rel="stylesheet" href="{% static "core/css/base.css" %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+<aside>
+    <h1>The Best Teams</h1>
+    <nav>
+        <a href="#">Test</a>
+    </nav>
+</aside>
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+</body>
+</html>
