@@ -1,0 +1,28 @@
+# Plan
+10 teams in the site
+
+PART 1. # Description; Cards containing basic facts about the best teams in the world. Just an image and some trivia
+Teams used:
+- Manchester united
+- Real Madrid
+- Barcelona
+- Liverpool
+- Manchester city
+- Bayern Munich
+- Dortmund
+- Inter Milan
+- AC Milan
+- PSG
+
+<h1>The best teams in the world</h1>
+Information in the <div>:
+1. Image(White background, not clear)
+2. Team name(Bold)
+3. Stadium(Bold, Italic)
+4. Rating(1-5, 🌕, 🌗, 1-100)
+5. Trophies: (Bold, italic)
+6. League: (Bold, Italic)
+
+class for <div></div>: .card
+class="card"
+
