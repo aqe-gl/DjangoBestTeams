@@ -10,7 +10,7 @@
     <br>
     <div class="card">
         <div class="my-images">
-            <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/7/7a/Manchester_United_FC_crest.svg/2021px-Manchester_United_FC_crest.svg.png"
+            <img src="{% static 'core/images/Manchester-United.png' %}"
                  alt="Manchester united">
         </div>
         <p><b>Manchester United</b></p>
@@ -21,7 +21,7 @@
     </div>
     <div class="card">
         <div class="my-images">
-            <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/5/56/Real_Madrid_CF.svg/1464px-Real_Madrid_CF.svg.png"
+            <img src="{% static 'core/images/Real-Madrid.png' %}"
                  alt="Real Madrid">
         </div>
         <p><b>Real Madrid</b></p>
@@ -32,7 +32,7 @@
     </div>
     <div class="card">
         <div class="my-images">
-            <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1010px-FC_Barcelona_%28crest%29.svg.png"
+            <img src="{% static 'core/images/Barcelona.png' %}"
                  alt="Barcelona">
         </div>
         <p><b>Barcelona</b></p>
@@ -59,9 +59,28 @@
         </div>
         <p><b>Manchester City</b></p>
         <p>Stadium: <b><i>Etihad Stadium</i></b></p>
-        <p>Rating: <b>96(🌕🌕🌕🌕🌗)</b></p>
-        <p>Trophies: <b><i>99</i></b></p>
+        <p>Rating: <b>92(🌕🌕🌕🌕🌗)</b></p>
+        <p>Trophies: <b><i>43</i></b></p>
         <p>League: <b><i>Premier League</i></b></p>
     </div>
 
+    <div>
+        <div class="my-images">
+            <img src="{% static 'core/images/Bayern-München.png' %}" alt="Bayern">
+        </div>
+        <p><b>Bayern Munich</b></p>
+        <p>Stadium: <b><i>Allianz Arena</i></b></p>
+        <p>Rating: <b>99(🌕🌕🌕🌕🌕)</b></p>
+        <p>Trophies: <b><i>89</i></b></p>
+        <p>League: <b><i>Bundesliga</i></b></p>
+    </div>
+
+    <div class="card">
+        <div class="my-images">
+            <img src="{% static 'core/images/Borussia-Dortmund.png' %}" alt="BVB 09">
+        </div>
+        <p><b>Borussia Dortmund</b></p>
+        <p>Stadium: <b><i>WestfalenStadion</i></b></p>
+        <p>Rating: <b><i>99</i></b></p>
+    </div>
 {% endblock %}
