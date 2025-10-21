@@ -6,116 +6,130 @@
 {% endblock %}
 
 {% block content %}
-    <h1>The best teams in the world</h1>
-    <br>
-    <div class="card">
-        <div class="my-images">
-            <img src="{% static 'core/images/Manchester-United.png' %}"
-                 alt="Manchester united">
-        </div>
-        <p><b>Manchester United</b></p>
-        <p>Stadium: <b><i>Old Trafford</i></b></p>
-        <p>Rating: <b>99</b>(🌕🌕🌕🌕🌕)</p>
-        <p>Trophies: <b><i>68</i></b></p>
-        <p>League: <b><i>Premier League</i></b></p>
-    </div>
-    <div class="card">
-        <div class="my-images">
-            <img src="{% static 'core/images/Real-Madrid.png' %}"
-                 alt="Real Madrid">
-        </div>
-        <p><b>Real Madrid</b></p>
-        <p>Stadium: <b><i>Santiago Bernabeu</i></b></p>
-        <p>Rating: <b>99.5(🌕🌕🌕🌕🌕)</b></p>
-        <p>Trophies: <b><i>102</i></b></p>
-        <p>League: <b><i>La Liga</i></b></p>
-    </div>
-    <div class="card">
-        <div class="my-images">
-            <img src="{% static 'core/images/Barcelona.png' %}"
-                 alt="Barcelona">
-        </div>
-        <p><b>Barcelona</b></p>
-        <p>Stadium: <b><i>Camp Nou</i></b></p>
-        <p>Rating: <b>99.5(🌕🌕🌕🌕🌕)</b></p>
-        <p>Trophies: <b><i>108</i></b></p>
-        <p>League: <b><i>La Liga</i></b></p>
-    </div>
-    <div class="card">
-        <div class="my-images">
-            <img src="https://thumbs.dreamstime.com/b/liverpool-f-c-england-feb-vector-illustration-logo-white-background-87585073.jpg"
-                 alt="Liverpool">
-        </div>
-        <p><b>Liverpool</b></p>
-        <p>Stadium: <b><i>Anfield</i></b></p>
-        <p>Rating: <b>97(🌕🌕🌕🌕🌗)</b></p>
-        <p>Trophies: <b><i>71</i></b></p>
-        <p>League: <b><i>Premier League</i></b></p>
-    </div>
-    <div class="card">
-        <div class="my-images">
-            <img src="https://img.freepik.com/premium-vector/manchester-city-logo-vector_618941-176.jpg?w=2000"
-                 alt="Manchester City">
-        </div>
-        <p><b>Manchester City</b></p>
-        <p>Stadium: <b><i>Etihad Stadium</i></b></p>
-        <p>Rating: <b>92(🌕🌕🌕🌕🌗)</b></p>
-        <p>Trophies: <b><i>43</i></b></p>
-        <p>League: <b><i>Premier League</i></b></p>
-    </div>
+    <div class="overlay"></div>
+    <h1 class="title">The best teams in the world</h1>
+    <div class="card-container">
 
-    <div>
-        <div class="my-images">
-            <img src="{% static 'core/images/Bayern-München.png' %}" alt="Bayern">
-        </div>
-        <p><b>Bayern Munich</b></p>
-        <p>Stadium: <b><i>Allianz Arena</i></b></p>
-        <p>Rating: <b>99(🌕🌕🌕🌕🌕)</b></p>
-        <p>Trophies: <b><i>89</i></b></p>
-        <p>League: <b><i>Bundesliga</i></b></p>
-    </div>
 
-    <div class="card">
-        <div class="my-images">
-            <img src="{% static 'core/images/Borussia-Dortmund.png' %}" alt="BVB 09">
+        <div class="card">
+            <div class="my-images">
+                <img src="{% static 'core/images/Manchester-United.png' %}"
+                     alt="Manchester united">
+            </div>
+            <hr>
+            <p><b>Manchester United</b></p>
+            <p>Stadium: <b><i>Old Trafford</i></b></p>
+            <p>Rating: <b>99</b>(🌕🌕🌕🌕🌕)</p>
+            <p>Trophies: <b><i>68</i></b></p>
+            <p>League: <b><i>Premier League</i></b></p>
         </div>
-        <p><b>Borussia Dortmund</b></p>
-        <p>Stadium: <b><i>WestfalenStadion</i></b></p>
-        <p>Rating: <b>87(🌕🌕🌕🌕)</b></p>
-        <p>Trophies: <b><i>22</i></b></p>
-        <p>League: <b><i>Bundesliga</i></b></p>
-    </div>
+        <div class="card">
+            <div class="my-images">
+                <img src="{% static 'core/images/Real-Madrid.png' %}"
+                     alt="Real Madrid">
+            </div>
+            <hr>
+            <p><b>Real Madrid</b></p>
+            <p>Stadium: <b><i>Santiago Bernabeu</i></b></p>
+            <p>Rating: <b>99.5(🌕🌕🌕🌕🌕)</b></p>
+            <p>Trophies: <b><i>102</i></b></p>
+            <p>League: <b><i>La Liga</i></b></p>
+        </div>
+        <div class="card">
+            <div class="my-images">
+                <img src="{% static 'core/images/Barcelona.png' %}"
+                     alt="Barcelona">
+            </div>
+            <hr>
+            <p><b>Barcelona</b></p>
+            <p>Stadium: <b><i>Camp Nou</i></b></p>
+            <p>Rating: <b>99.5(🌕🌕🌕🌕🌕)</b></p>
+            <p>Trophies: <b><i>108</i></b></p>
+            <p>League: <b><i>La Liga</i></b></p>
+        </div>
+        <div class="card">
+            <div class="my-images">
+                <img src="{% static 'core/images/Liverpool.png' %}"
+                     alt="Liverpool">
+            </div>
+            <hr>
+            <p><b>Liverpool</b></p>
+            <p>Stadium: <b><i>Anfield</i></b></p>
+            <p>Rating: <b>97(🌕🌕🌕🌕🌗)</b></p>
+            <p>Trophies: <b><i>71</i></b></p>
+            <p>League: <b><i>Premier League</i></b></p>
+        </div>
+        <div class="card">
+            <div class="my-images">
+                <img src="https://img.freepik.com/premium-vector/manchester-city-logo-vector_618941-176.jpg?w=2000"
+                     alt="Manchester City">
+            </div>
+            <hr>
+            <p><b>Manchester City</b></p>
+            <p>Stadium: <b><i>Etihad Stadium</i></b></p>
+            <p>Rating: <b>92(🌕🌕🌕🌕🌗)</b></p>
+            <p>Trophies: <b><i>43</i></b></p>
+            <p>League: <b><i>Premier League</i></b></p>
+        </div>
 
-    <div class="card">
-        <div class="my-images">
-            <img src="{% static 'core/images/Inter-Milan.jpg' %}" alt="Inter-Milan">
+        <div class="card">
+            <div class="my-images">
+                <img src="{% static 'core/images/Bayern-München.png' %}" alt="Bayern">
+            </div>
+            <hr>
+            <p><b>Bayern Munich</b></p>
+            <p>Stadium: <b><i>Allianz Arena</i></b></p>
+            <p>Rating: <b>99(🌕🌕🌕🌕🌕)</b></p>
+            <p>Trophies: <b><i>89</i></b></p>
+            <p>League: <b><i>Bundesliga</i></b></p>
         </div>
-        <p><b>Inter Milan</b></p>
-        <p>Stadium: <b><i>San Siro</i></b></p>
-        <p>Rating: <b>93(🌕🌕🌕🌕🌗)</b></p>
-        <p>Trophies: <b><i>44</i></b></p>
-        <p>League: <b><i>Serie A</i></b></p>
-    </div>
 
-    <div class="card">
-        <div class="my-images">
-            <img src="{% static 'core/images/AC-Milan.png' %}" alt="AC Milan">
+        <div class="card">
+            <div class="my-images">
+                <img src="{% static 'core/images/Borussia-Dortmund.png' %}" alt="BVB 09">
+            </div>
+            <hr>
+            <p><b>Borussia Dortmund</b></p>
+            <p>Stadium: <b><i>WestfalenStadion</i></b></p>
+            <p>Rating: <b>87(🌕🌕🌕🌕)</b></p>
+            <p>Trophies: <b><i>22</i></b></p>
+            <p>League: <b><i>Bundesliga</i></b></p>
         </div>
-        <p><b>AC Milan</b></p>
-        <p>Stadium: <b><i>San Siro</i></b></p>
-        <p>Rating: <b>92(🌕🌕🌕🌕🌗)</b></p>
-        <p>Trophies: <b><i>50</i></b></p>
-        <p>League: <b><i>Serie</i></b></p>
-    </div>
 
-    <div class="card">
-        <div class="my-images">
-            <img src="{% static 'core/images/PSG.png' %}" alt="PSG">
+        <div class="card">
+            <div class="my-images">
+                <img src="{% static 'core/images/Inter-Milan.jpg' %}" alt="Inter-Milan">
+            </div>
+            <hr>
+            <p><b>Inter Milan</b></p>
+            <p>Stadium: <b><i>San Siro</i></b></p>
+            <p>Rating: <b>93(🌕🌕🌕🌕🌗)</b></p>
+            <p>Trophies: <b><i>44</i></b></p>
+            <p>League: <b><i>Serie A</i></b></p>
         </div>
-        <p><b>Paris Saint-Germain</b></p>
-        <p>Stadium: <b><i>Parc de Princes</i></b></p>
-        <p>Rating: <b>91(🌕🌕🌕🌕🌗)</b></p>
-        <p>Trophies: <b><i>56</i></b></p>
-        <p>League: <b><i>Ligue 1</i></b></p>
+
+        <div class="card">
+            <div class="my-images">
+                <img src="{% static 'core/images/AC-Milan.png' %}" alt="AC Milan">
+            </div>
+            <hr>
+            <p><b>AC Milan</b></p>
+            <p>Stadium: <b><i>San Siro</i></b></p>
+            <p>Rating: <b>92(🌕🌕🌕🌕🌗)</b></p>
+            <p>Trophies: <b><i>50</i></b></p>
+            <p>League: <b><i>Serie</i></b></p>
+        </div>
+
+        <div class="card">
+            <div class="my-images">
+                <img src="{% static 'core/images/PSG.png' %}" alt="PSG">
+            </div>
+            <hr>
+            <p><b>Paris Saint-Germain</b></p>
+            <p>Stadium: <b><i>Parc de Princes</i></b></p>
+            <p>Rating: <b>91(🌕🌕🌕🌕🌗)</b></p>
+            <p>Trophies: <b><i>56</i></b></p>
+            <p>League: <b><i>Ligue 1</i></b></p>
+        </div>
     </div>
 {% endblock %}

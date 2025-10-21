@@ -1,8 +1,46 @@
+
 .card {
-    width: 200px;
+    width: 38%;
+    border: 4px solid black;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 10px;
+    align-content: center;
+}
+
+.card-container {
+    text-align: center;
 }
 
 .my-images img {
-    width: 200px;
+    width: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px;
+    align-content: center;
 }
+
+hr {
+    background-color: #646464;
+    height: 3px;
+    border: none;
+}
+
+.overlay {
+    width: 100%;
+    background-image: url("https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0531%2Fr1500839_1296x729_16%2D9.jpg"); /*main background*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+.title {
+    text-align: center;
+    margin: 20px auto;
+}
+
+
 
