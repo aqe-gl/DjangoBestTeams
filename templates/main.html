@@ -6,7 +6,10 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
+    <img id="overlay" src="{% static 'core/images/psg_lift_ucl.jpg' %}">
+
+
+
     <h1 class="title">The best teams in the world</h1>
     <div class="card-container">
 
@@ -132,4 +135,5 @@
             <p>League: <b><i>Ligue 1</i></b></p>
         </div>
     </div>
+        <script src="{% static 'core/js/main.js' %}"></script>
 {% endblock %}

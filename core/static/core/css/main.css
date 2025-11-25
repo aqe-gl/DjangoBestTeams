@@ -28,13 +28,11 @@ hr {
     border: none;
 }
 
-.overlay {
+#overlay {
     width: 100%;
-    background-image: url("https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0531%2Fr1500839_1296x729_16%2D9.jpg"); /*main background*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
+    object-fit: cover;
+    object-position: center top;
+    height: 70vh;
 }
 
 .title {
