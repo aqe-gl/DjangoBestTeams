@@ -12,7 +12,14 @@
 <aside>
     <h1>The Best Teams</h1>
     <nav>
-        <a href="#">Test</a>
+        <ol>
+            {% for team in teams %}
+                <li>
+                    <a href="#">{{ team.name }}</a>
+                </li>
+            {% endfor %}
+        </ol>
+
     </nav>
 </aside>
 <main>
