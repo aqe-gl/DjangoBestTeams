@@ -2,10 +2,10 @@ window.onload = function () {
     // List of legendary football images
     const images = [
         "static/core/images/psg_lift_ucl.jpg",
-        "static/core/images/miracle_at_istanbul.jpg",
-        "static/core/images/manutd_w_at_anfield.jpg",
-        "static/core/images/flick_trophies.jpg",
-        "static/core/images/ronaldo-bk.jpg"
+        "static/core/images/man-utd-fa-cup.jpg",
+        "static/core/images/dortmund-ultras.jpg",
+        "static/core/images/neuer-save.jpeg",
+        "static/core/images/omar-marmoush.jpg"
     ];
 
     let index = 0;
@@ -22,5 +22,7 @@ window.onload = function () {
     setInterval(changeImage, 3000)
 
 }
+
+console.log("In order to have the js code working i had to delete some css and change the class to id");
 
 
