@@ -1,20 +1,22 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from core.models import Team
 
 
 # Create your views here.
 def index(request):
+    path = request.path
+    path = path.replace("/", '')
+    if path == '':
+        path = 'main'
+        print(path)
     teams = Team.objects.all()
     fields = ['name', 'stadium', 'rating', 'trophies', 'league']
-    image_map = {
-        "Manchester United": "Manchester-United.png",
-        "Real Madrid": "Real-Madrid.png",
-        "Barcelona": "Barcelona.png",
-        "Inter Milan": "Inter-Milan.jpg",
-        "Liverpool": "Liverpool.png",
-        "Borussia Dortmund": "Borussia-Dortmund.png",
-        "Bayern Munich": "Bayern-Munich.png",
-        "Paris Saint Germain": "Paris-Saint-Germain.png",
-    }
-    return render(request, 'main.html', {'teams': teams, 'fields': fields, 'image_map': image_map})
+    team = ['manutd', 'realmadrid', 'barca', 'liverpool', 'mancity',
+            'bayern', 'dortmund', 'inter', 'milan', 'psg']
+    return render(request, 'main.html', {'teams': teams, 'fields': fields, 'team': team})
+
+def team_details(request, team_id):
+    team = get_object_or_404(Team, id=team_id)
+    teams = Team.objects.all()
+    return render(request, 'team-details.html', {'team': team, 'teams': teams})

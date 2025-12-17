@@ -15,7 +15,13 @@
         <ol>
             {% for team in teams %}
                 <li>
-                    <a href="#">{{ team.name }}</a>
+                    <button>
+                        <span class="transition"></span>
+                        <span class="gradient"></span>
+                        <span class="label">
+                            <a href="{% url 'team-details' team.id %}" class="hover-link">{{ team.name }}</a>
+                        </span>
+                    </button>
                 </li>
             {% endfor %}
         </ol>

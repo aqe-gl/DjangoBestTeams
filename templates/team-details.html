@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div class="card">
+        <div class="my-images">
+            {% if team.image %}
+                <img src="{{ team.image.url }}" alt="{{ team.name }}">
+            {% else %}
+                <img src="{% static 'core/images/default-image.jpg' %}" alt="{{ team.name }}">
+            {% endif %}
+
+        </div>
+        <hr>
+        <p><b>{{ team.name }}</b></p>
+        <p>Stadium: <b><i>{{ team.stadium }}</i></b></p>
+        <p>Rating: <b>{{ team.rating }}</b></p>
+        <p>Trophies: <b><i>{{ team.trophies }}</i></b></p>
+        <p>League: <b><i>{{ team.league }}</i></b></p>
+    </div>
+    <style>
+
+    .card {
+    width: 100%;
+    border: 4px solid black;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 10px;
+    align-content: center;
+    background-color: whitesmoke;
+}
+
+.my-images img {
+    width: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px;
+    align-content: center;
+}
+
+hr {
+    background-color: #646464;
+    height: 3px;
+    border: none;
+}
+    </style>
+{% endblock %}

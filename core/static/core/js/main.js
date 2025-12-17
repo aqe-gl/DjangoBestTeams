@@ -25,4 +25,31 @@ window.onload = function () {
 
 console.log("In order to have the js code working i had to delete some css and change the class to id");
 
+const bubble = document.getElementById("speech-bubble");
+document.querySelectorAll(".hover-link").forEach(link => {
+    link.addEventListener("mouseenter", e => {
+        const text = link.getAttribute("data-bubble");
+        console.log(text);
+        bubble.textContent = text;
+          // position bubble near link
+    const rect = link.getBoundingClientRect();
+    bubble.style.left = rect.left + "px";
+    bubble.style.top = (rect.top - 50) + "px";
+
+    // show bubble with pop animation
+    bubble.style.display = "block";
+    requestAnimationFrame(() => {
+      bubble.style.opacity = "1";
+      bubble.style.transform = "scale(1)";
+    });
+  });
+
+  link.addEventListener("mouseleave", () => {
+    // hide bubble with pop-out effect
+    bubble.style.opacity = "0";
+    bubble.style.transform = "scale(0.8)";
+    setTimeout(() => (bubble.style.display = "none"), 150);
+  });
+});
+
 
