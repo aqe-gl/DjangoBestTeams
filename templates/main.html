@@ -21,11 +21,21 @@
 
                 </div>
                 <hr>
-                <p><b>{{ team.name }}</b></p>
-                <p>Stadium: <b><i>{{ team.stadium }}</i></b></p>
-                <p>Rating: <b>{{ team.rating }}</b></p>
-                <p>Trophies: <b><i>{{ team.trophies }}</i></b></p>
-                <p>League: <b><i>{{ team.league }}</i></b></p>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p><b>{{ team.name }}</b></p>
+                            <p>Stadium: <b><i>{{ team.stadium }}</i></b></p>
+                            <p>Rating: <b>{{ team.rating }}</b></p>
+                            <p>Trophies: <b><i>{{ team.trophies }}</i></b></p>
+                            <p>League: <b><i>{{ team.league }}</i></b></p>
+                        </div>
+                        <div class="flip-card-back">
+                            <a href="/" class="speech-bubble">{{ team.name }}</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         {% endfor %}
     </div>

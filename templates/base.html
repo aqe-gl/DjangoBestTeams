@@ -10,7 +10,20 @@
 </head>
 <body>
 <aside>
-    <h1>The Best Teams</h1>
+    <h1>
+        <div class="chart-card">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <a href="/" class="speech-bubble">The Best Teams</a>
+                    </div>
+                    <div class="flip-card-back">
+                        <a href="/" class="speech-bubble">The Best Teams</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </h1>
     <nav>
         <ol>
             {% for team in teams %}
@@ -34,5 +47,6 @@
         {% endblock %}
     </div>
 </main>
+<script src="{% static "core/js/main.js" %}"></script>
 </body>
 </html>
