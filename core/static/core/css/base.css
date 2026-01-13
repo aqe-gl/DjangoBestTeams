@@ -30,6 +30,7 @@ main {
 .main-content {
     margin-left: 23%;
     background-color: midnightblue;
+    text-align: center;
 }
 
 ol {

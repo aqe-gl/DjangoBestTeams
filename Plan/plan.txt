@@ -26,3 +26,8 @@ Information in the <div>:
 class for <div></div>: .card
 class="card"
 
+separate team details page example:
+Title <team.name>
+Image <team.image.url> or <default>
+description:
+trophies: Integer field

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap');
+
+:root {
+    --primary: #0a2a66;
+    --secondary: #f4f6f9;
+    --border: #d1d5db;
+    --text: #1f2933;
+    --accent: #2563eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+    background-color: var(--secondary);
+    font-family: "BBH Bogle", sans-serif;
+}
+
+/* Title / Header */
+#title {
+    background-color: #ffffff;
+    color: var(--primary);
+    text-align: center;
+    font-weight: 500;
+    padding: 1.2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    margin-bottom: 0.5rem;
+}
+
+/* Main Content */
+.main-content {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Paragraphs */
+.paragraph {
+    color: var(--text);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 0.75rem;
+    padding: 0.5rem;
+}
+
+/* Box / Card */
+.box {
+    border: 1px solid var(--border);
+    background-color: #f9fafb;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* Demo Links / Buttons */
+.demo {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    color: #ffffff;
+    background-color: var(--accent);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.demo:hover {
+    background-color: #1e40af;
+    transform: translateY(-2px);
+}
+
+.main-content {
+    text-align: center;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-content {
+    display: inline-block;
+    max-width: 800px;
+    text-align: center;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body .main-content {
+    display: block; /* Change from inline-block to block */
+    max-width: 800px; /* Auto centers it */
+    text-align: center;
+    background-color: #ffffff; /* Override the midnightblue */
+}
+
+.separator {
+    background-color: #1f2933;
+    height: 3px;
+    margin: 3px;
+}
+
+.detail-card {
+    width: 275px;
+    margin: 25px auto;
+    border-radius: 10px;
+    border: 3px solid black;
+}
