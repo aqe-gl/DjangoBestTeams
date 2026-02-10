@@ -57,4 +57,12 @@
             </div>
         </div>
     </div>
+    <h2>League: <b>{{ team.league }}</b></h2>
+    {% for article in articles %}
+        {% if article.league_picture %}
+            <img src="{{ article.league_picture.url }}" alt="{{ team.league }}">
+        {% else %}
+            <img src="{% static 'core/images/default-image.jpg' %}" alt="No image available">
+        {% endif %}
+    {% endfor %}
 {% endblock %}

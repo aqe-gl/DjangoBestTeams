@@ -20,7 +20,7 @@ class Article(models.Model):
     objects = None
     description = models.TextField(max_length=367, blank=True)
     titles = models.IntegerField()
-    league_picture = models.ImageField('LEAGUE', upload_to='league_pics', blank=True)
+    league_picture = models.ImageField('LEAGUE', upload_to='league_pics/', blank=True)
     link_to_site = models.URLField('LINK', blank=True)
     last_five = models.CharField(max_length=90)
     # Needs to be updated every match day
