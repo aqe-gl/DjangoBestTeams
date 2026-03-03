@@ -1,15 +1,13 @@
 {% extends "reviews-base.html" %}
 {% load static %}
 
-
-
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 {% endblock %}
 
 {% block content %}
     <div class="header-container">
-        <h1><span class="material-icons">reviews</span> Rate a team</h1>
+        <h1><span class="material-icons">reviews</span> Rate {{ team.name }}</h1>
         <p class="subtitle">Share your experience and read what others have to say</p>
     </div>
 
@@ -33,6 +31,7 @@
                 {{ form.rating }}
                 <label for="{{ form.rating.id_for_label }}">Rating (1-10)</label>
             </div>
+            <input type="number" id="team-id" name="team-id">
             <p>
                 <input type="submit" value="Submit Review">
             </p>

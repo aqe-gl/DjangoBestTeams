@@ -5,5 +5,5 @@ from core.views import team_details
 
 urlpatterns = [
     path('', index, name='index'),
-    path('team-details.html/<int:team_id>/', team_details, name='team-details')
+    path('team-details/<int:team_id>/', team_details, name='team-details')
 ]
