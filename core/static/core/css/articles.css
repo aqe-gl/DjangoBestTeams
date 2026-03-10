@@ -4,7 +4,7 @@
     --primary: #0a2a66;
     --secondary: #f4f6f9;
     --border: #d1d5db;
-    --text: #1f2933;
+    --text: #333333;
     --accent: #2563eb;
 }
 
@@ -101,6 +101,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+.league-pic {
+    align-content: center;
+}
 
 body .main-content {
     display: block; /* Change from inline-block to block */
@@ -120,4 +123,18 @@ body .main-content {
     margin: 25px auto;
     border-radius: 10px;
     border: 3px solid black;
+}
+
+.review-link {
+    border: 2px solid black;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: var(--accent);
+}
+
+.review-link:hover {
+    background-color: #1e40af;
+    transform: translateY(-2px);
 }

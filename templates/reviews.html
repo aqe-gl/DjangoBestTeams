@@ -8,6 +8,7 @@
 {% block content %}
     <div class="header-container">
         <h1><span class="material-icons">reviews</span> Rate {{ team.name }}</h1>
+        <img src="{{ team.image.url }}" alt="team-image" class="logo-team">
         <p class="subtitle">Share your experience and read what others have to say</p>
     </div>
 
@@ -31,7 +32,7 @@
                 {{ form.rating }}
                 <label for="{{ form.rating.id_for_label }}">Rating (1-10)</label>
             </div>
-            <input type="number" id="team-id" name="team-id">
+            {{ form.team }}
             <p>
                 <input type="submit" value="Submit Review">
             </p>

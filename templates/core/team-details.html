@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "core/base.html" %}
 {% load static %}
 
 {% block extra_css %}
@@ -60,11 +60,11 @@
     <h2>League: <b>{{ team.league }}</b></h2>
     {% for article in articles %}
         {% if article.league_picture %}
-            <img src="{{ article.league_picture.url }}" alt="{{ team.league }}">
+            <img src="{{ article.league_picture.url }}" alt="{{ team.league }}" class="league-pic" width="200" height="200">
         {% else %}
             <img src="{% static 'core/images/default-image.jpg' %}" alt="No image available">
         {% endif %}
     {% endfor %}
-
-        <a href="{% url 'review_page' team.id%}" style="border: 2px solid black">Rate this team</a>
+    <br>
+        <a href="{% url 'review_page' team.id%}" class="review-link">Rate this team</a>
 {% endblock %}

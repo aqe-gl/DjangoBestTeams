@@ -14,8 +14,9 @@ def review_view(request, team_id=1):
             email = data['email']
             review = data['review']
             rating = data['rating']
+            team = data['team']
 
-            Review.objects.create(name=name, email=email, review=review, rating=rating)
+            Review.objects.create(name=name, email=email, review=review, rating=rating, team=team)
             # Redirect to prevent form resubmission
             return redirect('review_page')
     else:

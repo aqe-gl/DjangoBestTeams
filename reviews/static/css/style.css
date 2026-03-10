@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Inter', 'Roboto', sans-serif;
-    background: #f4f6f8;
+    background: #ffffff;
     color: #333;
     line-height: 1.6;
 }
@@ -41,10 +41,12 @@ body {
 
 /* ===== Review Form ===== */
 .review-form {
-    background: #fff;
+    background: #f5eaea;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    width: 67%;
+    margin: auto;
     margin-bottom: 50px;
 }
 
@@ -178,3 +180,7 @@ body {
     color: #999;
 }
 
+.logo-team {
+    width: 120px;
+    margin-bottom: 0.5rem;
+}

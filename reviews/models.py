@@ -13,4 +13,8 @@ class Review(models.Model):
     team = models.ForeignKey(Team, on_delete=models.CASCADE, related_name='reviews', blank=True, null=True)
 
     def __str__(self):
-        return f"{self.name} - {self.rating}/10 {self.team.name}"
+        if self.team != None:
+            current_team = self.team.name
+        else:
+            current_team = 'No team'
+        return f"{self.name} - {self.rating}/10 {current_team}"

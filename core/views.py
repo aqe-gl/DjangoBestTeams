@@ -14,7 +14,7 @@ def index(request):
     fields = ['name', 'stadium', 'rating', 'trophies', 'league']
     team = ['manutd', 'realmadrid', 'barca', 'liverpool', 'mancity',
             'bayern', 'dortmund', 'inter', 'milan', 'psg']
-    return render(request, 'main.html', {'teams': teams, 'fields': fields, 'team': team})
+    return render(request, 'core/main.html', {'teams': teams, 'fields': fields, 'team': team})
 
 
 def team_details(request, team_id):
@@ -26,7 +26,7 @@ def team_details(request, team_id):
     for i in loop:
         print(i)
 
-    return render(request, 'team-details.html', {
+    return render(request, 'core/team-details.html', {
         'team': team,
         'teams': teams,
         'articles': team_articles,
