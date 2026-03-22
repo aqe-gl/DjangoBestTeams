@@ -32,7 +32,7 @@
                 {{ form.rating }}
                 <label for="{{ form.rating.id_for_label }}">Rating (1-10)</label>
             </div>
-            {{ form.team }}
+            {{ form.team.as_hidden }}
             <p>
                 <input type="submit" value="Submit Review">
             </p>
